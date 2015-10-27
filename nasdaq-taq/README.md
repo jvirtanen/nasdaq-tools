@@ -12,6 +12,11 @@ NASDAQ TAQ supports the following file formats:
 
   - **NASDAQ TotalView-ITCH 5.0**
 
+NASDAQ TAQ uses [Juncture][] and [Nassau][] for NASDAQ file format support.
+
+  [Juncture]: https://github.com/jvirtanen/juncture
+  [Nassau]:   https://github.com/jvirtanen/nassau
+
 
 Usage
 -----
