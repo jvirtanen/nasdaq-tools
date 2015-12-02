@@ -4,6 +4,8 @@ NASDAQ Market Data Tools
 NASDAQ Market Data Tools contain applications for working with historical
 market data from NASDAQ.
 
+NASDAQ Market Data Tools require Java Runtime Environment (JRE) 8 or newer.
+
 
 Features
 --------
