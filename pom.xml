@@ -68,6 +68,11 @@
         <artifactId>parity-top</artifactId>
         <version>${parity.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.jvirtanen.util</groupId>
+        <artifactId>util-extras</artifactId>
+        <version>0.1.0</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
