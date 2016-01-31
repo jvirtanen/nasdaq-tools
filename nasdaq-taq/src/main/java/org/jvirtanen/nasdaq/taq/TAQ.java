@@ -1,6 +1,7 @@
 package org.jvirtanen.nasdaq.taq;
 
 import static org.jvirtanen.lang.Strings.*;
+import static org.jvirtanen.util.Applications.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +15,7 @@ class TAQ {
 
     public static void main(String[] args) {
         if (args.length != 3)
-            usage();
+            usage("nasdaq-taq <filename> <date> <instrument>");
 
         try {
             main(new File(args[0]), args[1], args[2]);
@@ -47,16 +48,6 @@ class TAQ {
         while (reader.read());
 
         sink.flush();
-    }
-
-    private static void usage() {
-        System.err.println("Usage: nasdaq-taq <filename> <date> <instrument>");
-        System.exit(2);
-    }
-
-    private static void error(Throwable throwable) {
-        System.err.println("error: " + throwable.getMessage());
-        System.exit(1);
     }
 
 }
