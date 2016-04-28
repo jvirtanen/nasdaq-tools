@@ -15,12 +15,12 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.jvirtanen.juncture</groupId>
-      <artifactId>juncture-nasdaq</artifactId>
+      <groupId>com.paritytrading.foundation</groupId>
+      <artifactId>foundation</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.jvirtanen.lang</groupId>
-      <artifactId>lang-extras</artifactId>
+      <groupId>org.jvirtanen.juncture</groupId>
+      <artifactId>juncture-nasdaq</artifactId>
     </dependency>
     <dependency>
       <groupId>org.jvirtanen.nassau</groupId>

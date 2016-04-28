@@ -1,8 +1,8 @@
 package org.jvirtanen.nasdaq.taq;
 
-import static org.jvirtanen.lang.Strings.*;
 import static org.jvirtanen.util.Applications.*;
 
+import com.paritytrading.foundation.ASCII;
 import java.io.File;
 import java.io.IOException;
 import org.jvirtanen.juncture.nasdaq.itch50.ITCH50Parser;
@@ -29,7 +29,7 @@ class TAQ {
 
         Market market = new Market(sink);
 
-        ITCH50Parser listener = new ITCH50Parser(new ITCH50Source(market, encodeLong(instrument), sink));
+        ITCH50Parser listener = new ITCH50Parser(new ITCH50Source(market, ASCII.packLong(instrument), sink));
 
         BinaryFILEStatusListener statusListener = new BinaryFILEStatusListener() {
 
@@ -43,7 +43,7 @@ class TAQ {
 
         BinaryFILEReader reader = BinaryFILEReader.open(file, statusParser);
 
-        market.open(encodeLong(instrument));
+        market.open(ASCII.packLong(instrument));
 
         while (reader.read());
 
