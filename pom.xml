@@ -34,7 +34,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.8</java.version>
-    <parity.version>0.2.0</parity.version>
+    <parity.version>0.4.0</parity.version>
   </properties>
 
   <modules>
@@ -49,22 +49,22 @@
         <version>0.1.0</version>
       </dependency>
       <dependency>
-        <groupId>org.jvirtanen.juncture</groupId>
+        <groupId>com.paritytrading.juncture</groupId>
         <artifactId>juncture-nasdaq</artifactId>
-        <version>0.1.0</version>
+        <version>0.3.0</version>
       </dependency>
       <dependency>
-        <groupId>org.jvirtanen.nassau</groupId>
+        <groupId>com.paritytrading.nassau</groupId>
         <artifactId>nassau</artifactId>
-        <version>0.4.0</version>
+        <version>0.9.0</version>
       </dependency>
       <dependency>
-        <groupId>org.jvirtanen.parity</groupId>
+        <groupId>com.paritytrading.parity</groupId>
         <artifactId>parity-file</artifactId>
         <version>${parity.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.jvirtanen.parity</groupId>
+        <groupId>com.paritytrading.parity</groupId>
         <artifactId>parity-top</artifactId>
         <version>${parity.version}</version>
       </dependency>

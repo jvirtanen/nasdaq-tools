@@ -1,10 +1,10 @@
 package org.jvirtanen.nasdaq.taq;
 
+import com.paritytrading.parity.file.taq.TAQ;
+import com.paritytrading.parity.file.taq.TAQWriter;
+import com.paritytrading.parity.top.MarketListener;
+import com.paritytrading.parity.top.Side;
 import java.io.Flushable;
-import org.jvirtanen.parity.file.taq.TAQ;
-import org.jvirtanen.parity.file.taq.TAQWriter;
-import org.jvirtanen.parity.top.MarketListener;
-import org.jvirtanen.parity.top.Side;
 
 class TAQSink implements Flushable, MarketListener {
 

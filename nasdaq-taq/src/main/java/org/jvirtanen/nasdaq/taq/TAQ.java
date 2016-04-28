@@ -3,13 +3,13 @@ package org.jvirtanen.nasdaq.taq;
 import static org.jvirtanen.util.Applications.*;
 
 import com.paritytrading.foundation.ASCII;
+import com.paritytrading.juncture.nasdaq.itch50.ITCH50Parser;
+import com.paritytrading.nassau.binaryfile.BinaryFILEReader;
+import com.paritytrading.nassau.binaryfile.BinaryFILEStatusListener;
+import com.paritytrading.nassau.binaryfile.BinaryFILEStatusParser;
+import com.paritytrading.parity.top.Market;
 import java.io.File;
 import java.io.IOException;
-import org.jvirtanen.juncture.nasdaq.itch50.ITCH50Parser;
-import org.jvirtanen.nassau.binaryfile.BinaryFILEReader;
-import org.jvirtanen.nassau.binaryfile.BinaryFILEStatusListener;
-import org.jvirtanen.nassau.binaryfile.BinaryFILEStatusParser;
-import org.jvirtanen.parity.top.Market;
 
 class TAQ {
 

@@ -14,8 +14,8 @@ NASDAQ TAQ supports the following file formats:
 
 NASDAQ TAQ uses [Juncture][] and [Nassau][] for NASDAQ file format support.
 
-  [Juncture]: https://github.com/jvirtanen/juncture
-  [Nassau]:   https://github.com/jvirtanen/nassau
+  [Juncture]: https://github.com/paritytrading/juncture
+  [Nassau]:   https://github.com/paritytrading/nassau
 
 
 Usage
@@ -28,7 +28,7 @@ Run NASDAQ TAQ with Java:
 The application displays the market events on the standard output formatted as
 [TAQ][].
 
-  [TAQ]: https://github.com/jvirtanen/parity/blob/master/parity-file/doc/TAQ.md
+  [TAQ]: https://github.com/paritytrading/parity/blob/master/parity-file/doc/TAQ.md
 
 
 License

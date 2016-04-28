@@ -1,10 +1,10 @@
 package org.jvirtanen.nasdaq.taq;
 
-import org.jvirtanen.juncture.nasdaq.itch50.ITCH50;
-import org.jvirtanen.juncture.nasdaq.itch50.ITCH50Listener;
-import org.jvirtanen.parity.top.Market;
-import org.jvirtanen.parity.top.Order;
-import org.jvirtanen.parity.top.Side;
+import com.paritytrading.juncture.nasdaq.itch50.ITCH50;
+import com.paritytrading.juncture.nasdaq.itch50.ITCH50Listener;
+import com.paritytrading.parity.top.Market;
+import com.paritytrading.parity.top.Order;
+import com.paritytrading.parity.top.Side;
 
 class ITCH50Source implements ITCH50Listener {
 
