@@ -12,12 +12,6 @@
   <description>Applications for working with historical market data from NASDAQ.</description>
   <url>https://github.com/jvirtanen/nasdaq-tools</url>
 
-  <scm>
-    <connection>scm:git:git@github.com:jvirtanen/nasdaq-tools.git</connection>
-    <developerConnection>scm:git:git@github.com:jvirtanen/nasdaq-tools.git</developerConnection>
-    <url>https://github.com/jvirtanen/nasdaq-tools</url>
-  </scm>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <kotlin.version>1.0.2</kotlin.version>
