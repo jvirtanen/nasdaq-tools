@@ -12,13 +12,6 @@
   <description>Applications for working with historical market data from NASDAQ.</description>
   <url>https://github.com/jvirtanen/nasdaq-tools</url>
 
-  <licenses>
-    <license>
-      <name>Apache License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-    </license>
-  </licenses>
-
   <scm>
     <connection>scm:git:git@github.com:jvirtanen/nasdaq-tools.git</connection>
     <developerConnection>scm:git:git@github.com:jvirtanen/nasdaq-tools.git</developerConnection>
