@@ -3,12 +3,6 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>org.sonatype.oss</groupId>
-    <artifactId>oss-parent</artifactId>
-    <version>7</version>
-  </parent>
-
   <groupId>org.jvirtanen.nasdaq</groupId>
   <artifactId>nasdaq-tools-parent</artifactId>
   <version>0.1.0-SNAPSHOT</version>
