@@ -8,28 +8,28 @@ import com.paritytrading.parity.top.Side
 
 class ITCH50Source(val market: Market, val instrument: Long, val sink: TAQSink): ITCH50Listener {
 
-    override fun systemEvent(message: ITCH50.SystemEvent) {
+    override fun systemEvent(message: ITCH50.SystemEvent?) {
     }
 
-    override fun stockDirectory(message: ITCH50.StockDirectory) {
+    override fun stockDirectory(message: ITCH50.StockDirectory?) {
     }
 
-    override fun stockTradingAction(message: ITCH50.StockTradingAction) {
+    override fun stockTradingAction(message: ITCH50.StockTradingAction?) {
     }
 
-    override fun regSHORestriction(message: ITCH50.RegSHORestriction) {
+    override fun regSHORestriction(message: ITCH50.RegSHORestriction?) {
     }
 
-    override fun marketParticipantPosition(message: ITCH50.MarketParticipantPosition) {
+    override fun marketParticipantPosition(message: ITCH50.MarketParticipantPosition?) {
     }
 
-    override fun mwcbDeclineLevel(message: ITCH50.MWCBDeclineLevel) {
+    override fun mwcbDeclineLevel(message: ITCH50.MWCBDeclineLevel?) {
     }
 
-    override fun mwcbStatus(message: ITCH50.MWCBStatus) {
+    override fun mwcbStatus(message: ITCH50.MWCBStatus?) {
     }
 
-    override fun ipoQuotingPeriodUpdate(message: ITCH50.IPOQuotingPeriodUpdate) {
+    override fun ipoQuotingPeriodUpdate(message: ITCH50.IPOQuotingPeriodUpdate?) {
     }
 
     override fun addOrder(message: ITCH50.AddOrder) {
@@ -93,16 +93,16 @@ class ITCH50Source(val market: Market, val instrument: Long, val sink: TAQSink):
             sink.trade(message.price, message.shares)
     }
 
-    override fun crossTrade(message: ITCH50.CrossTrade) {
+    override fun crossTrade(message: ITCH50.CrossTrade?) {
     }
 
-    override fun brokenTrade(message: ITCH50.BrokenTrade) {
+    override fun brokenTrade(message: ITCH50.BrokenTrade?) {
     }
 
-    override fun noii(message: ITCH50.NOII) {
+    override fun noii(message: ITCH50.NOII?) {
     }
 
-    override fun rpii(message: ITCH50.RPII) {
+    override fun rpii(message: ITCH50.RPII?) {
     }
 
     private fun side(buySellIndicator: Byte): Side? {
