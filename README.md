@@ -12,8 +12,8 @@ Features
 
 NASDAQ Market Data Tools consist of the following applications:
 
-  - [**NASDAQ TAQ**](nasdaq-taq) extracts the best bids and offers (BBOs) and
-    trades
+- [**NASDAQ TAQ**](nasdaq-taq) extracts the best bids and offers (BBOs) and
+  trades
 
 
 License
