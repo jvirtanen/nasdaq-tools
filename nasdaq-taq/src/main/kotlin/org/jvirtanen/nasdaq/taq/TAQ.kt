@@ -4,9 +4,7 @@ import org.jvirtanen.util.Applications.*
 
 import com.paritytrading.foundation.ASCII
 import com.paritytrading.juncture.nasdaq.itch50.ITCH50Parser
-import com.paritytrading.nassau.binaryfile.BinaryFILEReader
-import com.paritytrading.nassau.binaryfile.BinaryFILEStatusListener
-import com.paritytrading.nassau.binaryfile.BinaryFILEStatusParser
+import com.paritytrading.nassau.util.BinaryFILE
 import com.paritytrading.parity.top.Market
 import java.io.File
 import java.io.IOException
@@ -26,21 +24,11 @@ private fun main(file: File, date: String, instrument: String) {
     val sink   = TAQSink(date, instrument)
     val market = Market(sink)
 
-    val listener       = ITCH50Parser(ITCH50Source(market, ASCII.packLong(instrument), sink))
-    val statusListener = object : BinaryFILEStatusListener {
-
-        override fun endOfSession() {
-        }
-
-    }
-
-    val statusParser = BinaryFILEStatusParser(listener, statusListener)
-
-    val reader = BinaryFILEReader.open(file, statusParser)
+    val listener = ITCH50Parser(ITCH50Source(market, ASCII.packLong(instrument), sink))
 
     market.open(ASCII.packLong(instrument))
 
-    while (reader.read())
+    BinaryFILE.read(file, listener)
 
     sink.flush()
 }

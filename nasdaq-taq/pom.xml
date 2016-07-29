@@ -27,6 +27,10 @@
       <artifactId>nassau</artifactId>
     </dependency>
     <dependency>
+      <groupId>com.paritytrading.nassau</groupId>
+      <artifactId>nassau-util</artifactId>
+    </dependency>
+    <dependency>
       <groupId>com.paritytrading.parity</groupId>
       <artifactId>parity-file</artifactId>
     </dependency>
