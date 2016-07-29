@@ -72,7 +72,7 @@ class ITCH50Source(val market: Market, val instrument: Long, val sink: TAQSink):
     }
 
     override fun orderReplace(message: ITCH50.OrderReplace) {
-        val order = market.get(message.originalOrderReferenceNumber)
+        val order = market.find(message.originalOrderReferenceNumber)
         if (order == null)
             return
 
