@@ -2,7 +2,9 @@ Nasdaq Market Data Tools
 ========================
 
 Nasdaq Market Data Tools contain applications for working with historical
-market data from Nasdaq.
+market data from [Nasdaq][].
+
+  [Nasdaq]: http://nasdaq.com
 
 Nasdaq Market Data Tools require Java Runtime Environment (JRE) 6 or newer.
 
