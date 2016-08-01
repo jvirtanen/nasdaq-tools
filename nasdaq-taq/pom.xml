@@ -11,7 +11,7 @@
 
   <artifactId>nasdaq-taq</artifactId>
 
-  <name>NASDAQ TAQ</name>
+  <name>Nasdaq TAQ</name>
 
   <dependencies>
     <dependency>
