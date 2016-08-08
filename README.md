@@ -6,7 +6,7 @@ market data from [Nasdaq][].
 
   [Nasdaq]: http://nasdaq.com
 
-Nasdaq Market Data Tools require Java Runtime Environment (JRE) 6 or newer.
+Nasdaq Market Data Tools require Java Runtime Environment (JRE) 8 or newer.
 
 
 Features
