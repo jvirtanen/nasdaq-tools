@@ -6,7 +6,7 @@ import com.paritytrading.parity.top.MarketListener;
 import com.paritytrading.parity.top.Side;
 import java.io.Flushable;
 
-public class TAQSink implements Flushable, MarketListener {
+class TAQSink implements Flushable, MarketListener {
 
     private static final long NANOS_PER_MILLI = 1000 * 1000;
 
