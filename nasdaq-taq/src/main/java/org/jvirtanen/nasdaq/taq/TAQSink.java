@@ -8,7 +8,7 @@ import java.io.Flushable;
 
 class TAQSink implements Flushable, MarketListener {
 
-    private static final long NANOS_PER_MILLI = 1000 * 1000;
+    private static final long NANOS_PER_MILLI = 1_000_000;
 
     private TAQ.Quote quote;
     private TAQ.Trade trade;
