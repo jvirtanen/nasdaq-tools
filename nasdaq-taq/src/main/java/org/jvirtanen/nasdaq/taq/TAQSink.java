@@ -34,7 +34,7 @@ class TAQSink implements Flushable, MarketListener {
         timestampLow  = 0;
     }
 
-    public void timestamp(int high, long low) {
+    public void timestamp(long high, long low) {
         timestampHigh = high;
         timestampLow  = low;
     }
