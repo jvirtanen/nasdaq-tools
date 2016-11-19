@@ -36,4 +36,4 @@ The application displays the market events on the standard output formatted as
 License
 -------
 
-Nasdaq TAQ is released under the Apache License, Version 2.0.
+Released under the Apache License, Version 2.0.
