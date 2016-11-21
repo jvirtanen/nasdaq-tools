@@ -12,6 +12,10 @@ Nasdaq Market Data Tools require Java Runtime Environment (JRE) 8 or newer.
 Features
 --------
 
+Nasdaq Market Data Tools support the following file formats:
+
+- **NASDAQ TotalView-ITCH 5.0**
+
 Nasdaq Market Data Tools consist of the following applications:
 
 - [**Nasdaq TAQ**](nasdaq-taq) extracts the best bids and offers (BBOs) and

@@ -5,21 +5,6 @@ Nasdaq TAQ is an application that extracts the best bids and offers (BBOs) and
 trades from historical market data from Nasdaq.
 
 
-Features
---------
-
-Nasdaq TAQ supports the following file formats:
-
-- **NASDAQ TotalView-ITCH 5.0**
-
-Nasdaq TAQ uses [Juncture][] and [Nassau][] for Nasdaq file format support and
-[Parity][] for order book reconstruction and TAQ file format support.
-
-  [Juncture]: https://github.com/paritytrading/juncture
-  [Nassau]:   https://github.com/paritytrading/nassau
-  [Parity]:   https://github.com/paritytrading/parity
-
-
 Usage
 -----
 
