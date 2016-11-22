@@ -20,6 +20,7 @@
   </properties>
 
   <modules>
+    <module>nasdaq-pmd</module>
     <module>nasdaq-taq</module>
   </modules>
 
@@ -52,8 +53,18 @@
       </dependency>
       <dependency>
         <groupId>com.paritytrading.parity</groupId>
+        <artifactId>parity-net</artifactId>
+        <version>${parity.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.paritytrading.parity</groupId>
         <artifactId>parity-top</artifactId>
         <version>${parity.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>it.unimi.dsi</groupId>
+        <artifactId>fastutil</artifactId>
+        <version>7.0.13</version>
       </dependency>
       <dependency>
         <groupId>org.jvirtanen.util</groupId>
