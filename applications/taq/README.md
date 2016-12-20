@@ -10,7 +10,7 @@ Usage
 
 Run Nasdaq TAQ with Java:
 
-    java -jar <executable> <filename> <date> <instrument>
+    java -jar nasdaq-taq.jar <filename> <date> <instrument>
 
 The application displays the market events on the standard output formatted as
 [TAQ][].
