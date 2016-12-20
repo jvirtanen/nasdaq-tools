@@ -12,7 +12,7 @@ Usage
 
 Run Nasdaq PMD with Java:
 
-    java -jar <executable> <input-file> <output-file>
+    java -jar nasdaq-pmd.jar <input-file> <output-file>
 
 Given an input file containing NASDAQ TotalView-ITCH 5.0 messages, the
 application produces an output file containing corresponding [PMD][] messages.
