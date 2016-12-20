@@ -20,7 +20,7 @@
   </properties>
 
   <modules>
-    <module>nasdaq-pmd</module>
+    <module>applications/pmd</module>
     <module>nasdaq-taq</module>
   </modules>
 
