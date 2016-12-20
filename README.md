@@ -21,8 +21,8 @@ Nasdaq Market Data Tools consist of the following applications:
 - [**Nasdaq PMD**](applications/pmd) converts historical market data from
   Nasdaq to [Parity][]
 
-- [**Nasdaq TAQ**](nasdaq-taq) extracts the best bids and offers (BBOs) and
-  trades
+- [**Nasdaq TAQ**](applications/taq) extracts the best bids and offers (BBOs)
+  and trades
 
   [Parity]: https://github.com/paritytrading/parity
 

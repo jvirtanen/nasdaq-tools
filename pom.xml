@@ -21,7 +21,7 @@
 
   <modules>
     <module>applications/pmd</module>
-    <module>nasdaq-taq</module>
+    <module>applications/taq</module>
   </modules>
 
   <dependencyManagement>
