@@ -15,8 +15,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.8</java.version>
-    <nassau.version>0.11.0</nassau.version>
-    <parity.version>0.5.0</parity.version>
+    <nassau.version>0.13.0</nassau.version>
+    <parity.version>0.6.0</parity.version>
   </properties>
 
   <modules>
@@ -29,16 +29,16 @@
       <dependency>
         <groupId>com.paritytrading.foundation</groupId>
         <artifactId>foundation</artifactId>
-        <version>0.2.0</version>
+        <version>0.2.1</version>
       </dependency>
       <dependency>
         <groupId>com.paritytrading.juncture</groupId>
         <artifactId>juncture-nasdaq</artifactId>
-        <version>0.3.0</version>
+        <version>0.4.0</version>
       </dependency>
       <dependency>
         <groupId>com.paritytrading.nassau</groupId>
-        <artifactId>nassau</artifactId>
+        <artifactId>nassau-core</artifactId>
         <version>${nassau.version}</version>
       </dependency>
       <dependency>
@@ -48,17 +48,17 @@
       </dependency>
       <dependency>
         <groupId>com.paritytrading.parity</groupId>
+        <artifactId>parity-book</artifactId>
+        <version>${parity.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.paritytrading.parity</groupId>
         <artifactId>parity-file</artifactId>
         <version>${parity.version}</version>
       </dependency>
       <dependency>
         <groupId>com.paritytrading.parity</groupId>
         <artifactId>parity-net</artifactId>
-        <version>${parity.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.paritytrading.parity</groupId>
-        <artifactId>parity-top</artifactId>
         <version>${parity.version}</version>
       </dependency>
       <dependency>

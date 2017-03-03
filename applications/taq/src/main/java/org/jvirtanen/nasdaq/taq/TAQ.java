@@ -5,7 +5,7 @@ import static org.jvirtanen.util.Applications.*;
 import com.paritytrading.foundation.ASCII;
 import com.paritytrading.juncture.nasdaq.itch50.ITCH50Parser;
 import com.paritytrading.nassau.util.BinaryFILE;
-import com.paritytrading.parity.top.Market;
+import com.paritytrading.parity.book.Market;
 import java.io.File;
 import java.io.IOException;
 

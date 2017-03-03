@@ -25,7 +25,7 @@
     </dependency>
     <dependency>
       <groupId>com.paritytrading.nassau</groupId>
-      <artifactId>nassau</artifactId>
+      <artifactId>nassau-core</artifactId>
     </dependency>
     <dependency>
       <groupId>com.paritytrading.nassau</groupId>
@@ -33,11 +33,11 @@
     </dependency>
     <dependency>
       <groupId>com.paritytrading.parity</groupId>
-      <artifactId>parity-file</artifactId>
+      <artifactId>parity-book</artifactId>
     </dependency>
     <dependency>
       <groupId>com.paritytrading.parity</groupId>
-      <artifactId>parity-top</artifactId>
+      <artifactId>parity-file</artifactId>
     </dependency>
     <dependency>
       <groupId>org.jvirtanen.util</groupId>

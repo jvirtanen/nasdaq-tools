@@ -2,9 +2,9 @@ package org.jvirtanen.nasdaq.taq;
 
 import com.paritytrading.juncture.nasdaq.itch50.ITCH50;
 import com.paritytrading.juncture.nasdaq.itch50.ITCH50Listener;
-import com.paritytrading.parity.top.Market;
-import com.paritytrading.parity.top.Order;
-import com.paritytrading.parity.top.Side;
+import com.paritytrading.parity.book.Market;
+import com.paritytrading.parity.book.Order;
+import com.paritytrading.parity.book.Side;
 
 class ITCH50Source implements ITCH50Listener {
 
@@ -105,7 +105,7 @@ class ITCH50Source implements ITCH50Listener {
 
         sink.timestamp(message.timestampHigh, message.timestampLow);
 
-        long instrument = order.getInstrument();
+        long instrument = order.getOrderBook().getInstrument();
         Side side       = order.getSide();
 
         market.delete(message.originalOrderReferenceNumber);

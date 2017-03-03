@@ -1,14 +1,17 @@
 package org.jvirtanen.nasdaq.taq;
 
+import com.paritytrading.parity.book.MarketListener;
+import com.paritytrading.parity.book.OrderBook;
+import com.paritytrading.parity.book.Side;
 import com.paritytrading.parity.file.taq.TAQ;
 import com.paritytrading.parity.file.taq.TAQWriter;
-import com.paritytrading.parity.top.MarketListener;
-import com.paritytrading.parity.top.Side;
 import java.io.Flushable;
 
 class TAQSink implements Flushable, MarketListener {
 
     private static final long NANOS_PER_MILLI = 1_000_000;
+
+    private static final double PRICE_FACTOR = 10000.0;
 
     private TAQ.Quote quote;
     private TAQ.Trade trade;
@@ -40,22 +43,28 @@ class TAQSink implements Flushable, MarketListener {
     }
 
     @Override
-    public void bbo(long instrument, long bidPrice, long bidSize, long askPrice, long askSize) {
+    public void update(OrderBook book, boolean bbo) {
+        if (!bbo)
+            return;
+
+        long bidPrice = book.getBestBidPrice();
+        long askPrice = book.getBestAskPrice();
+
         quote.timestampMillis = timestampMillis();
 
-        quote.bidPrice = bidPrice;
-        quote.bidSize  = bidSize;
-        quote.askPrice = askPrice;
-        quote.askSize  = askSize;
+        quote.bidPrice = bidPrice / PRICE_FACTOR;
+        quote.bidSize  = book.getBidSize(bidPrice);
+        quote.askPrice = askPrice / PRICE_FACTOR;
+        quote.askSize  = book.getAskSize(askPrice);
 
         writer.write(quote);
     }
 
     @Override
-    public void trade(long instrument, Side side, long price, long size) {
+    public void trade(OrderBook book, Side side, long price, long size) {
         trade.timestampMillis = timestampMillis();
 
-        trade.price = price;
+        trade.price = price / PRICE_FACTOR;
         trade.size  = size;
         trade.side  = side(side);
 

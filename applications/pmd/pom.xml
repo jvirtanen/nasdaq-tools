@@ -21,7 +21,7 @@
     </dependency>
     <dependency>
       <groupId>com.paritytrading.nassau</groupId>
-      <artifactId>nassau</artifactId>
+      <artifactId>nassau-core</artifactId>
     </dependency>
     <dependency>
       <groupId>com.paritytrading.nassau</groupId>
