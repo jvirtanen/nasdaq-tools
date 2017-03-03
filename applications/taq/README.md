@@ -15,7 +15,7 @@ Run Nasdaq TAQ with Java:
 The application displays the market events on the standard output formatted as
 [TAQ][].
 
-  [TAQ]: https://github.com/paritytrading/parity/blob/master/parity-file/doc/TAQ.md
+  [TAQ]: https://github.com/paritytrading/parity/blob/master/libraries/file/doc/TAQ.md
 
 
 License
