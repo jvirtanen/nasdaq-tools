@@ -17,7 +17,7 @@ Run Nasdaq PMD with Java:
 Given an input file containing NASDAQ TotalView-ITCH 5.0 messages, the
 application produces an output file containing corresponding [PMD][] messages.
 
-  [PMD]: https://github.com/paritytrading/parity/tree/master/parity-net/doc/PMD.md
+  [PMD]: https://github.com/paritytrading/parity/blob/master/libraries/net/doc/PMD.md
 
 
 License
