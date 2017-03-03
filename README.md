@@ -1,5 +1,4 @@
-Nasdaq Market Data Tools
-========================
+# Nasdaq Market Data Tools
 
 Nasdaq Market Data Tools contain applications for working with historical
 market data from [Nasdaq][].
@@ -8,17 +7,13 @@ market data from [Nasdaq][].
 
 Nasdaq Market Data Tools require Java Runtime Environment (JRE) 8 or newer.
 
-
-File Formats
-------------
+## File Formats
 
 Nasdaq Market Data Tools support the following file formats:
 
 - **NASDAQ TotalView-ITCH 5.0**
 
-
-Modules
--------
+## Modules
 
 Nasdaq Market Data Tools consist of the following applications:
 
@@ -30,9 +25,7 @@ Nasdaq Market Data Tools consist of the following applications:
 
   [Parity]: https://github.com/paritytrading/parity
 
-
-License
--------
+## License
 
 Copyright 2015 Jussi Virtanen.
 
