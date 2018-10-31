@@ -74,7 +74,7 @@ class TAQSink implements Flushable, MarketListener {
     public void trade(long price, long size) {
         trade.timestampMillis = timestampMillis();
 
-        trade.price = price;
+        trade.price = price / PRICE_FACTOR;
         trade.size  = size;
         trade.side  = TAQ.UNKNOWN;
 
