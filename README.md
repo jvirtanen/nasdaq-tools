@@ -1,3 +1,6 @@
+> :warning: This repository is **archived** and no further development
+> will take place.
+
 # Nasdaq Market Data Tools
 
 Nasdaq Market Data Tools contain applications for working with historical
